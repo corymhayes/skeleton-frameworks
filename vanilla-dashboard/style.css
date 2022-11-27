@@ -1,0 +1,229 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+
+
+/** 
+    TOP NAV
+**/
+
+nav {
+    width: auto;
+    height: 7em;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    margin-left: 30rem;
+}
+
+nav ul {
+    margin-left: 2rem;
+}
+
+/** 
+    SIDEBAR 
+**/
+
+#sidebar {
+    width: 30rem;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+}
+
+#logo {
+    height: 7rem;
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo h1 {
+    font-size: 2rem;
+}
+
+#sidebar li {
+    padding: 3rem;
+}
+
+/**
+    CONTAINERS
+**/
+#main-container {
+    margin-left: 30rem;
+    padding: 7rem;
+}
+
+#card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+
+/**
+    TOP CARD
+**/
+
+.top-card {
+    height: 17rem;
+    width: 30rem;
+    padding: 3rem;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-amount-container {
+    border-left: 6px black solid;
+    padding-left: 2rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: cadetblue;
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-amount {
+    font-size: 3rem;
+}
+
+.card-icon {
+    height: 5rem;
+    width: 5rem;
+    background-color: brown;
+}
+
+.changes {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    background-color: burlywood;
+}
+
+.changes-amount {
+    color: green;
+    font-size: 1.6rem;
+}
+
+/**
+    GRAPHS
+**/
+
+#graph-container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+#pie-graph-container,
+#line-graph-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    font-size: 1.6rem;
+}
+
+#pie-graph-container {
+    width: 50%;
+    background-color: purple;
+    margin-right: 2rem;
+}
+
+#line-graph-container {
+    width: 100%;
+    background-color: seagreen;
+}
+
+
+
+/** 
+    TABLE
+**/
+
+#table-container {
+    margin-top: 2rem;
+    background-color: red;
+    padding: 2rem;
+}
+
+table {
+    background-color: pink;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+}
+
+tr {
+    border-bottom: 1px black solid;
+}
+
+th {
+    font-size: 1.2rem;
+    padding: 2rem 2rem 1rem;
+}
+
+tbody tr:last-child {
+    border: none;
+}
+
+td {
+    margin-right: 3px;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+.paid,
+.pending,
+.overdue {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.paid {
+    background-color: rgba(0,255,0,0.1);
+    color: green;
+}
+
+.pending {
+    background-color: rgba(255,255,0,0.5);
+    color: goldenrod;
+}
+
+.overdue {
+    background-color: rgba(255,0,0,0.1);
+    color: red;
+}
